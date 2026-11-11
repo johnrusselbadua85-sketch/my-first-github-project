@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #14213d, #2563a6);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #14213d;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #2563a6;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2563a6;
+            padding-bottom: 8px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2563a6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f4f8;
+        }
+
+        .project {
+            background-color: #eef5fc;
+            padding: 18px;
+            margin: 15px 0;
+            border-left: 5px solid #2563a6;
+            border-radius: 6px;
+        }
+
+        .project h3 {
+            color: #14213d;
+        }
+
+        .project a {
+            color: #2563a6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #2563a6;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #14213d;
+        }
+
+        footer {
+            background-color: #14213d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            main {
+                padding: 12px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. HEADER -->
+    <header id="home">
+        <h1>John Russel Badua</h1>
+        <p>My Personal Developer Portfolio</p>
+        <p>Aspiring Web Developer | Creative Thinker | Future Programmer</p>
+    </header>
+
+    <!-- 2. NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- 3. ABOUT ME -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+                alt="Computer workstation with a laptop displaying a web development workspace"
+                class="profile-image">
+
+            <p>
+                Hello! My name is John Russel Badua.
+                I am an aspiring web developer who enjoys
+                learning about technology and creating
+                useful digital experiences.
+            </p>
+
+            <p>
+                I am currently developing my knowledge
+                of HTML, CSS, programming, and website design.
+                I enjoy exploring new ideas and improving
+                my technical abilities.
+            </p>
+
+            <p>
+                My goal is to become a professional web
+                developer and create websites that can
+                help people and businesses.
+            </p>
+        </section>
+
+        <!-- 4. TECHNICAL SKILLS -->
+        <section id="skills">
+            <h2>My Technical Skills</h2>
+
+            <p>Here are some of the technical skills
+            I am currently learning:</p>
+
+            <ul>
+                <li>HTML - Webpage structure</li>
+                <li>CSS - Website styling and design</li>
+                <li>JavaScript - Basic programming</li>
+                <li>Git - Version control</li>
+                <li>GitHub - Repository management</li>
+            </ul>
+        </section>
+
+        <!-- 5. EDUCATIONAL BACKGROUND -->
+        <section id="education">
+            <h2>Educational Background</h2>
+
+            <table>
+                <tr>
+                    <th>School</th>
+                    <th>Program</th>
+                    <th>Year Level</th>
+                </tr>
+
+                <tr>
+                    <td>National University Fairview</td>
+                    <td>BSIT</td>
+                    <td>2nd Year</td>
+                </tr>
+
+                <tr>
+                    <td>Asian Institue of Computer Studies</td>
+                    <td>Senior High School</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 6. MY PROJECTS -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Project 1: Personal Portfolio Website</h3>
+                <p>
+                    A personal website created using HTML
+                    and CSS to introduce myself, display
+                    my skills, and share my goals.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Simple Student Information Page</h3>
+                <p>
+                    A basic webpage designed to display
+                    student information using HTML headings,
+                    paragraphs, lists, and tables.
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. CAREER GOALS -->
+        <section id="goals">
+            <h2>My Career Goals</h2>
+
+            <ol>
+                <li>Improve my knowledge of HTML, CSS,
+                    and JavaScript.</li>
+
+                <li>Develop more websites and build
+                    a strong programming portfolio.</li>
+
+                <li>Become a professional web developer
+                    and work in the technology industry.</li>
+            </ol>
+        </section>
+
+        <!-- 8. CONTACT ME -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you want to connect with me,
+                feel free to send me an email.
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:YOUR-EMAIL@gmail.com">
+                    johnrusselbadua85@gmail.com
+                </a>
+            </p>
+
+            <form action="mailto:YOUR-EMAIL@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <input type="text"
+                       name="Name"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       name="Email"
+                       placeholder="Your Email"
+                       required>
+
+                <textarea name="Message"
+                          rows="5"
+                          placeholder="Your Message"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 John Russel Badua.
+            All Rights Reserved.
+        </p>
+
+        <p>Thank you for visiting my portfolio!</p>
+    </footer>
+
+</body>
+</html>
